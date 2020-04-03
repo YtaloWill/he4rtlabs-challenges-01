@@ -4,12 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.imgur.com/VgSjV8j.png" width="300px" class="d-inline-block align-top" alt="Heart Devs">
+      </a>
+      <ul class="navbar-nav" id="navbarColor01">
+        <li class="navbar-item nav-link h1">Calculadora de Freelas</li>
+      </ul>
+    </nav>
+    <div class="container-md" id="main">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tempo diário investido no projeto</h5>
+              <p class="card-text">Todos sabemos que há uma empolgação na hora de codar, principalmente se o que fazemos está dando certo, ou o contrário e nos estressamos mais, então tente pensar quantas horas por dia está disposto a usar neste projeto, sendo elas boas ou ruins.</p>
+              <input type="number" name="diaryTime" id="diaryTime" class="container-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dias efetivos trabalhando</h5>
+              <p class="card-text">É possivel que você não trabalhe todos os dias nesse projeto? Claro, você tem outras responsabilidades também né? Fora tirar um dia ou outro para descansar, então coloque aqui quantos dias você <strong>REALMENTE</strong> vai (ou pretende) trabalhar no projeto.</p>
+              <input type="number" name="workDays" id="workDays" class="container-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dias de Férias por projeto</h5>
+              <p class="card-text">Todos precisam de férias, certo? Uma parte do quanto você pretende ganhar também! Seria aquele dinheirinho extra para sair, tomar um sorvete... ir para a Disney *cof cof*, porém fazendo isso depois de terminar o projeto (e antes de começar outro, é claro)! Inclua a quantidade de dias que deseja ter essa folga também.</p>
+              <input type="number" name="vacationDay" id="vacationDay" class="container-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Valor total do Projeto</h5>
+              <p class="card-text">E para o GRAND FINALE... quanto que você quer cobrar pelo projeto? Quanto acha que ele vale? Esqueça as horas, férias e tudo, foque apenas no quanto esse projeto vale para seu cliente, e qual seria um preço justo para ele.</p>
+              <input type="number" name="projectValue" id="projectValue" class="container-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="btnCalculate" data-target="#resultModal">Calcular</button>
+        </div>
+      </div>
     </div>
+
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">O valor da sua hora é...</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a target="blank" href="https://github.com/YtaloWill"><img src="assets/icons/Github.png" alt="Github"></a>
+      <a target="blank" href="https://www.linkedin.com/in/ytalowilliam/"><img src="assets/icons/Linkedin.png" alt="Linkedin"></a>
+      <a target="blank" href="https://twitter.com/YtaloWillGloria"><img src="assets/icons/Twitter.png" alt="Twitter"></a>
+      <div>He4rtLabsChallenges #1 por YtaloWill =D</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>

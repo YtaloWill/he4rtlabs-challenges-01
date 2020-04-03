@@ -1,0 +1,39 @@
+.card {
+	height:275px;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#main {
+	margin-top: 20px;
+}
+
+input {
+	position: relative;
+	margin-bottom: 0;
+}
+
+footer {
+		margin-top: 50px;
+		text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* remove arrows from input number */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
